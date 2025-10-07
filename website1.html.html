@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Trading Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    .content {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .stock {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .stock-name {
+      font-weight: bold;
+    }
+
+    .stock-actions button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .stock-actions button.sell {
+      background-color: #dc3545;
+    }
+
+    .stock-actions button:hover {
+      opacity: 0.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #eee;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .footer-info {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TradeSimple</h1>
+    <p>Welcome to your basic trading dashboard</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Markets</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="content">
+    <h2>Live Stocks</h2>
+
+    <div class="stock">
+      <div class="stock-name">Apple (AAPL)</div>
+      <div>$175.35</div>
+      <div class="stock-actions">
+        <button>Buy</button>
+        <button class="sell">Sell</button>
+      </div>
+    </div>
+
+    <div class="stock">
+      <div class="stock-name">Tesla (TSLA)</div>
+      <div>$250.80</div>
+      <div class="stock-actions">
+        <button>Buy</button>
+        <button class="sell">Sell</button>
+      </div>
+    </div>
+
+    <div class="stock">
+      <div class="stock-name">Amazon (AMZN)</div>
+      <div>$130.20</div>
+      <div class="stock-actions">
+        <button>Buy</button>
+        <button class="sell">Sell</button>
+      </div>
+    </div>
+
+    <div class="stock">
+      <div class="stock-name">Google (GOOGL)</div>
+      <div>$138.50</div>
+      <div class="stock-actions">
+        <button>Buy</button>
+        <button class="sell">Sell</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 TradeSimple. All rights reserved.
+    <div class="footer-info">
+      Created by: <strong>Devansh Bhayani</strong> | Enrollment No: <strong>240905040015</strong>
+    </div>
+  </footer>
+
+</body>
+</html>
